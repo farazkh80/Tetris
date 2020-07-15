@@ -1,0 +1,279 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tetris</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="main-div" style="width: 100%;">
+	<div class="row" style="width: 100%; min-height: 600px;">
+		<div class="col-lg-5 col-sm-12" style="width: 100%; min-height: 400px;">
+			<button class="start-button">Start</button>
+			<br>
+			<div class="row" style=" margin-top: 100px; width: 100%; height: 400px;">
+				<div class="col-lg-6 col-sm-6" style="width: 100%; height: 400px;">
+					<h1 class="score">Score: <span class="score-display">0</span></h1>
+					<h2 class="lines-display">Lines:<span class="lines-score">0</span></h2>
+				</div>
+				<div class="col-lg-6 col-sm-6" style="width: 100%; height: 400px;">
+					<div class="previous-shape">
+						<div class="previous-grid">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-7 col-sm-12" style="width: 100%; min-height:600px;">
+			<div class="game">
+				<div class="grid">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+					<div class="block3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="button-div" style="width: 100%; height: 200px;">
+	<div class="row" style="width: 80%; height: 200px; margin: auto;">
+		<div class="col-lg-6 col-sm-6" style="width: 100%; height: 200px;" >
+			<button class="rotate-button">Rotate</button>
+		</div>
+		<div class="col-lg-6 col-sm-6" style="width: 100%; height: 200px;">
+			<div class="row" style="width: 100%; height: 100px;">
+				<div class="col-lg-6 col-sm-6" style="width: 100%; height: 100px;">
+					<button class="left-button">Left</button>
+				</div>
+				<div class="col-lg-6 col-sm-6" style="width: 100%; height: 100px;">
+					<button class="right-button">Right</button>
+				</div>
+			</div>
+			<div class="row"style="width: 100%; height: 100px;">
+				<div class="col-lg-12 col-sm-12" style="width: 100%; height: 100px;">
+					<button class="down-button">Down</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
